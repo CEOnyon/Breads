@@ -44,16 +44,6 @@ breads.get('/:indexArray/edit', (req, res) => {
 
 
 // SHOW
-// breads.get('/:arrayIndex', (req, res) => {
-//   if (Bread[req.params.arrayIndex]) {
-//     res.render('Show', {
-//       bread:Bread[req.params.arrayIndex],
-//       index:req.params.arrayIndex,
-//     })
-//   } else {
-//     res.send('404')
-//   }
-// });
 
 breads.get('/:id', (req, res) => {
   Bread.findById(req.params.id)
